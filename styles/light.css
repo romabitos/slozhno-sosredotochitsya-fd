@@ -1,0 +1,80 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --cover-image: url("../images/cover-image-light.png");
+  --bg-color: #fff1f7;
+  --title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --menu-color-text: #353430;
+  --text-color: #353430;
+  --decoration-color: #353430;
+  --text-header-color: #353430;
+  --main-title-color: #353430;
+  --main-subtitle-color: #353430;
+  --title-footer-color: #ffc2e6;
+}
+
+.theme-light.page {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+}
+
+.header__rec {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.theme-light .header__theme-menu-button_type_light {
+  border: 1px solid var(--decoration-color);
+  width: 70px;
+  height: 26px;
+}
+
+.theme-light .header__theme-menu-button_type_dark:hover {
+  border: 1px solid #32312d66;
+  width: 70px;
+  height: 26px;
+}
+
+.theme-light .header__theme-menu-button_type_dark:focus-visible {
+  width: 104px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--decoration-color);
+}
+
+.theme-light .text-shadow:hover {
+  text-decoration: underline #353430;
+}
+
+.theme-light .text-shadow:focus-visible {
+  outline: 1px solid #32312d66;
+  width: 90px;
+  height: 33px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cover-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --menu-color-text: #353430;
+    --text-color: #353430;
+    --decoration-color: #353430;
+    --text-header-color: #353430;
+    --main-title-color: #353430;
+    --main-subtitle-color: #353430;
+    --title-footer-color: #ffc2e6;
+  }
+}

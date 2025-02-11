@@ -1,0 +1,19 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  --cover-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --menu-color-text: #ff0070;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --ibm-font: "IBM Plex Mono", sans-serif;
+  --decoration-color: #ff0070;
+  --text-header-color: #000028;
+  --main-title-color: #ff0070;
+  --main-subtitle-color: #000028;
+  --title-footer-color: #db00ff;
+}

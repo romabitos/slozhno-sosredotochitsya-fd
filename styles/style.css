@@ -25,6 +25,7 @@
 }
 
 .header__paragraph {
+  margin-bottom: 10px;
   align-self: center;
   font-family: var(--ibm-font);
   font-weight: 700;
@@ -94,12 +95,13 @@
 }
 
 .header__theme-menu {
+  margin-bottom: 10px;
   justify-self: flex-end;
 }
 
 .header__theme-menu-list {
   display: grid;
-  gap: 15px;
+  gap: 14px;
   text-align: center;
 }
 
@@ -121,7 +123,7 @@
   border: 0;
   background: transparent;
   cursor: pointer;
-  padding: 1px 12px 1px;
+  padding-bottom: 3px;
 }
 
 .header__theme-menu-button_type_light:hover {
@@ -268,10 +270,14 @@
   }
 
   .header__paragraph {
-  
+    margin-bottom: 0px;
     justify-self: flex-end;
     max-inline-size: 50%;
   }
+
+  .header__theme-menu {
+  margin-bottom: 0px;
+ }
 
   .header__rec {
     top: 13px;

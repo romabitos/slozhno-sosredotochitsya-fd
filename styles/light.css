@@ -35,12 +35,6 @@
 }
 
 
-
-.theme-light .header__theme-menu-button_type_dark:hover {
-  border: 1px solid #32312d66;
-
-}
-
 .theme-light .header__theme-menu-button_type_dark:focus-visible {
   border-bottom: 1px;
   border-style: solid;

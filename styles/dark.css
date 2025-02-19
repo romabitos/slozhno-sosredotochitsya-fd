@@ -36,7 +36,8 @@
 }
 
 .theme-dark .header__theme-menu-button_type_dark {
-  border: 1px solid var(--decoration-color);
+  outline: 1px solid var(--decoration-color);
   width: 70px;
   height: 26px;
 }
+

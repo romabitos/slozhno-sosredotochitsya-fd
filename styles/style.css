@@ -120,11 +120,11 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--decoration-color);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color), 0.4;
+  outline: 1px solid var(--decoration-color);
 }
 
 .header__theme-menu-button:focus {
@@ -132,7 +132,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  box-shadow: 0px 1px 0px 0px var(--accent-color);
+  box-shadow: 0px 1px 0px 0px var(--decoration-color);
   outline: none;
 }
 

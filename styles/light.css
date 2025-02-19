@@ -34,20 +34,14 @@
   pointer-events: none;
 }
 
-.theme-light .header__theme-menu-button_type_light {
-  border: 1px solid var(--decoration-color);
-  width: 70px;
-  height: 26px;
-}
+
 
 .theme-light .header__theme-menu-button_type_dark:hover {
   border: 1px solid #32312d66;
-  width: 70px;
-  height: 26px;
+
 }
 
 .theme-light .header__theme-menu-button_type_dark:focus-visible {
-  width: 104px;
   border-bottom: 1px;
   border-style: solid;
   border-color: var(--decoration-color);
@@ -59,8 +53,7 @@
 
 .theme-light .text-shadow:focus-visible {
   outline: 1px solid #32312d66;
-  width: 90px;
-  height: 33px;
+
 }
 
 @media (prefers-color-scheme: light) {

@@ -20,14 +20,12 @@
   --main-title-color: #353430;
   --main-subtitle-color: #353430;
   --title-footer-color: #ffc2e6;
-  --decoration-color-rgb: 53, 52, 48;
+  --decoration-color-alt: 53, 52, 48;
 }
 
 .theme-light.page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
-
-
 
 .theme-light .header__rec {
   display: none;
@@ -36,7 +34,6 @@
 .theme-light .header__theme-menu-button_active {
   pointer-events: none;
 }
-
 
 .theme-light .header__theme-menu-button_type_dark:focus-visible {
   border-bottom: 1px;
@@ -50,7 +47,6 @@
 
 .theme-light .text-shadow:focus-visible {
   outline: 1px solid #32312d66;
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -66,11 +62,10 @@
     --main-title-color: #353430;
     --main-subtitle-color: #353430;
     --title-footer-color: #ffc2e6;
-    --decoration-color-rgb: 53, 52, 48;
+    --decoration-color-alt: 53, 52, 48;
   }
 
   .header__rec {
     display: none;
   }
-
 }

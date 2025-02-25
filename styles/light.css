@@ -38,7 +38,7 @@
 .theme-light .header__theme-menu-button_type_dark:focus-visible {
   border-bottom: 1px;
   border-style: solid;
-  border-color: var(--decoration-color-rgb);
+  border-color: var(--decoration-color-alt);
 }
 
 .theme-light .text-shadow:hover {

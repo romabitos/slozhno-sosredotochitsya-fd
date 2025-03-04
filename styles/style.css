@@ -1,10 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-:root {
-}
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--cover-image);
   background-color: var(--bg-color);
   background-position: center;
@@ -13,8 +7,8 @@
 }
 
 .header {
-  display: grid;
   padding: 10px;
+  display: grid;
   min-block-size: 668px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
@@ -152,14 +146,33 @@
   background-color: var(--accent-color);
 }
 
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button_type_dark:focus-visible {
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--decoration-color-alt);
+}
+
+.text-shadow:hover {
+  text-decoration: underline #353430;
+}
+
+.text-shadow:focus-visible {
+  outline: 1px solid #32312d66;
+}
+
 .content {
+  display: grid;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.text-shadow {
+.text-link {
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-color);
+  text-shadow: 2px 1px 0 var(--accent-color);
 }
 
 .main__title {
@@ -189,17 +202,12 @@
   padding-top: 50px;
 }
 
-.main__how .main__subtitle:not(h3) {
-  font-family: var(--ibm-font);
-  font-style: normal;
+.main__how .main__subtitle:not(:first-child) {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #000028;
 }
 
 .main__how {
-  padding-top: -10px;
+  padding-top: 10px;
 }
 
 .main__text {
@@ -238,7 +246,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .header {
     padding: 20px;
   }
@@ -274,13 +282,12 @@
     right: 50px;
   }
 
-  .content {
+  .main__block {
     display: grid;
   }
 
   .main__why {
     padding-left: 10px;
-    display: grid;
     padding-bottom: 10px;
     grid-template-columns: 1fr 2fr;
   }
@@ -300,10 +307,6 @@
     margin-right: 10px;
   }
 
-  .main__what {
-    display: grid;
-  }
-
   .main__what .main__title {
     max-inline-size: min-content;
     margin-left: 10px;
@@ -315,7 +318,6 @@
   }
 
   .main__how {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 10px;
   }
@@ -391,7 +393,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   .header__theme-menu {
     padding-top: 2px;
     justify-self: center;
@@ -415,7 +417,6 @@
 
   .main__why {
     padding-top: 25px;
-    grid-template-columns: 1fr 2fr;
   }
 
   .why__section-text .main__subtitle {

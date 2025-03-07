@@ -124,13 +124,6 @@
   outline: none;
 }
 
-.text-shadow:hover {
-  text-decoration: underline;
-}
-
-.text-shadow:focus-visible {
-  outline: 1px solid #f1b2ce;
-}
 
 .title {
   font-family: var(--ibm-font);
@@ -156,13 +149,6 @@
   border-color: var(--decoration-color-alt);
 }
 
-.text-shadow:hover {
-  text-decoration: underline #353430;
-}
-
-.text-shadow:focus-visible {
-  outline: 1px solid #32312d66;
-}
 
 .content {
   display: grid;
@@ -171,8 +157,25 @@
 }
 
 .text-link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.text-link:hover {
+  border-block-end: 1px solid var(--text-color);
+  line-height: 1em;
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  padding: 0 1px 5px 0;
+  outline: 1px solid var(--text-color);
+  line-height: 0.5em;
 }
 
 .main__title {
@@ -302,7 +305,7 @@
     margin-right: 10px;
   }
 
-  .why__section-text .main__subtitle {
+  .main__subtitle {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -312,10 +315,6 @@
     margin-left: 10px;
   }
 
-  .what__section-text .main__subtitle {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
   .main__how {
     grid-template-columns: 1fr 2fr;
@@ -336,7 +335,6 @@
   }
 
   .main__how .main__subtitle {
-    margin-right: 10px;
     margin-left: 5px;
   }
 
@@ -412,7 +410,6 @@
 
   .content {
     padding-top: 15px;
-    display: grid;
   }
 
   .main__why {

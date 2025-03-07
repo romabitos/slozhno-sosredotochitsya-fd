@@ -109,6 +109,7 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--decoration-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -139,9 +140,6 @@
   background-color: var(--accent-color);
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
 
 .header__theme-menu-button_type_dark:focus-visible {
   border-bottom: 1px;
@@ -152,6 +150,7 @@
 
 .content {
   display: grid;
+  padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -197,9 +196,6 @@
   color: var(--main-subtitle-color);
 }
 
-.content {
-  padding-top: 40px;
-}
 
 .main__block:not(:first-child) {
   padding-top: 50px;
